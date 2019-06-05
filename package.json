@@ -8,7 +8,7 @@
   "scripts": {
     "debug": "nodemon --inspect index --ignore data.json",
     "test": "jest --watchAll --noStackTrace",
-    "start": "node index.js"
+    "start": "node index.js "
   },
   "homepage": "https://github.com/dev-academy-challenges/pupparazzi#readme",
   "repository": {
@@ -22,6 +22,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
+    "heroku": "^7.0.9",
     "i": "^0.3.6"
   },
   "devDependencies": {

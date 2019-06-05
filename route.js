@@ -2,7 +2,6 @@ const express = require('express')
 const puppiesRoutes = express.Router()
 const data = require('./data')
 const fs = require('fs')
-const newData = require('./newData')
 
 
 const viewData = {
@@ -32,7 +31,7 @@ puppiesRoutes.get('/edit/:id', (req, res) => {
 
 
 puppiesRoutes.post('/edit/:id', (req, res)=>{
-
+    
     req.body.id = req.params.id
     for (var i = 0; i< data.puppies.length; i++){
         if(data.puppies[i].id == req.params.id){
