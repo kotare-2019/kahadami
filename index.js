@@ -1,5 +1,5 @@
 const server = require('./server')
-const port = process.env.PORT || 3000
+// const port = process.env.PORT || 3000
 
 
 server.listen(port, function () {
@@ -7,6 +7,8 @@ server.listen(port, function () {
   console.log('Server is listening on port', port)
 })
 
+
+ var port = process.env.PORT || 3000
 
 // ─student@mac-013 ~/workspace/pupparazzi  ‹pano-ben*› 
 // ╰─$ lsof -i 3000
