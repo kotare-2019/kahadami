@@ -2,11 +2,14 @@ const express = require('express')
 const puppiesRoutes = express.Router()
 const data = require('./data')
 const fs = require('fs')
+const newData = require('./newData')
 
 
 const viewData = {
     data: data
 }
+
+
 
 puppiesRoutes.get('/', (req, res) => {
     res.render('./puppies/index', data);  
@@ -29,8 +32,15 @@ puppiesRoutes.get('/edit/:id', (req, res) => {
 
 
 puppiesRoutes.post('/edit/:id', (req, res)=>{
-        fs.writeFile('newData.json', JSON.stringify(req.body), 'utf8', (err)=>{
-            
+
+    req.body.id = req.params.id
+    for (var i = 0; i< data.puppies.length; i++){
+        if(data.puppies[i].id == req.params.id){
+            data.puppies[i] = req.body 
+        }
+    }
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), 'utf8', (err)=>{ 
+        res.redirect('/')
         })
 })
 

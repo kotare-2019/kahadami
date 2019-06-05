@@ -8,7 +8,7 @@
   "scripts": {
     "debug": "nodemon --inspect index --ignore data.json",
     "test": "jest --watchAll --noStackTrace",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js -i data.json"
   },
   "homepage": "https://github.com/dev-academy-challenges/pupparazzi#readme",
   "repository": {
