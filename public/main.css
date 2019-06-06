@@ -1,6 +1,5 @@
 body {
   background-image: url('./images/HomeBackground.jpg');
-  font-family: 'Spirax', cursive;
 }
 
 .container {
@@ -37,6 +36,10 @@ body {
 
 .title {
   text-align: center;
+  font-family: 'Muli', cursive;
+  font-weight: 600;
+  font-size: 5rem;
+  color: darkgreen;
 }
 
 .nav {
