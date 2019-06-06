@@ -1,5 +1,5 @@
 {
-  "puppies": [
+  "trees": [
     {
       "id": 1,
       "name": "Fido",
@@ -8,6 +8,7 @@
       "breed": "Labrador"
     },
     {
+      "id": 2,
       "name": "Coco",
       "breed": "Labrador",
       "owner": "Chloe",

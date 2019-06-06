@@ -15,10 +15,10 @@ server.use(express.urlencoded({
 // Middleware
 
 server.get('/', (req, res) => {
-  res.redirect('/home')
+  res.redirect('/trees')
 })
 
-server.use('/home', treeRoutes)
+server.use('/trees', treeRoutes)
 
 
 server.engine('hbs', hbs({
