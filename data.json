@@ -2,10 +2,10 @@
   "trees": [
     {
       "id": 1,
-      "name": "Fido",
-      "owner": "Fred",
+      "name": "Kahikatea",
+      "owner": "Ollies",
       "image": "/images/Kahikatea.jpg",
-      "breed": "Labrador"
+      "Story": ""
     },
     {
       "id": 2,
