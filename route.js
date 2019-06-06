@@ -1,5 +1,5 @@
 const express = require('express')
-const puppiesRoutes = express.Router()
+const treeRoutes = express.Router()
 const data = require('./data')
 const fs = require('fs')
 
@@ -10,32 +10,32 @@ const viewData = {
 
 
 
-puppiesRoutes.get('/', (req, res) => {
-    res.render('./puppies/index', data);  
+treeRoutes.get('/', (req, res) => {
+    res.render('./partials/index', data);  
 })
 
-puppiesRoutes.get('/:id', (req, res) => {
-    let puppyProfile = data.puppies.find(item =>{
+treeRoutes.get('/:id', (req, res) => {
+    let treeProfile = data.trees.find(item =>{
         return req.params.id == item.id
     })
-    res.render('./puppies/view', puppyProfile)
+    res.render('./partials/view', treeProfile)
 })
 
-puppiesRoutes.get('/edit/:id', (req, res) => {
-    let puppyProfile = data.puppies.find(item =>{
+treeRoutes.get('/edit/:id', (req, res) => {
+    let treeProfile = data.trees.find(item =>{
         return req.params.id == item.id
     })
-    res.render('./puppies/edit', puppyProfile) 
+    res.render('./partials/edit', treeProfile) 
 })
 
 
 
-puppiesRoutes.post('/edit/:id', (req, res)=>{
+treeRoutes.post('/edit/:id', (req, res)=>{
     
     req.body.id = req.params.id
-    for (var i = 0; i< data.puppies.length; i++){
-        if(data.puppies[i].id == req.params.id){
-            data.puppies[i] = req.body 
+    for (var i = 0; i< data.trees.length; i++){
+        if(data.trees[i].id == req.params.id){
+            data.trees[i] = req.body 
         }
     }
     fs.writeFile('data.json', JSON.stringify(data, null, 2), 'utf8', (err)=>{ 
@@ -48,6 +48,6 @@ puppiesRoutes.post('/edit/:id', (req, res)=>{
 
 
 module.exports = {
-    puppiesRoutes
+    treeRoutes
 }
 
