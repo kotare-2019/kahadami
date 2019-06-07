@@ -1,10 +1,9 @@
 body {
   background-image: url('./images/HomeBackground.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  font-family: 'Muli', cursive; 
   background-color: #75925c;
 }
-
 
 .container {
   display: flex;
@@ -21,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 .puppy {
@@ -32,7 +31,7 @@ body {
 }
 
 .img-circle {
-  border-radius: 0%;
+  border-radius: 100%;
   object-fit: cover;
   width: 150px;
   height: 150px;
@@ -48,21 +47,22 @@ body {
 
 .nav {
   text-align: center;
-  color: rgb(255, 255, 255);
-  height: 45px;
-  background-color: rgb(48, 58, 61);
+  width: 50%;
+  margin: 40px auto 60px;
+}
+
+.nav a{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  color: black;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Maitree', sans-serif;
 }
-
-.stripe {
-  height: 150px;
-  background-color: rgba(108, 47, 0);
-  font-size: 30px;
-  font-family: "Maitree", cursive;
+.move{
+  height: 50px;
 }
