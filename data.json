@@ -1,38 +1,39 @@
 {
   "trees": [
     {
-      "name": "efefe",
-      "origin": "OLLIE",
-      "owner": "efefe",
-      "image": "/images/Kahikatea.jpg",
-      "id": "1"
+      "id": 1,
+      "name": "Kowhai",
+      "owner": "Hahn",
+      "image": "/images/kowhaiTree.jpg",
+      "memory": ""
     },
     {
       "id": 2,
-      "name": "Coco",
-      "breed": "Labrador",
-      "owner": "Chloe",
-      "image": "/images/puppy2.jpg"
+      "name": "Totara",
+      "owner": "Mikey",
+      "image": "/images/totara.jpg",
+      "memory": ""
     },
     {
       "id": 3,
-      "name": "Magnum",
-      "owner": "Michael",
-      "image": "/images/puppy3.jpg",
-      "breed": "Rottweiler"
+      "name": "Pohutukawa",
+      "owner": "Dan",
+      "image": "/images/Pohutukawa.jpg",
+      "memory": ""
     },
     {
-      "name": "Sadie",
-      "breed": "Labrador",
-      "owner": "Sam",
-      "image": "/images/puppy4.jpg"
+      "id": 4,
+      "name": "Kahikatea",
+      "owner": "Ollie",
+      "image": "/images/Kahikatea.jpg",
+      "memory": ""
     },
     {
-      "name": "merp",
-      "breed": "Pug",
-      "owner": "Matthew",
-      "image": "/images/puppy5.png",
-      "id": "5"
+      "id": 5,
+      "name": "Kawakawa",
+      "owner": "Karla",
+      "image": "/images/kawakawa leaf.jpg",
+      "memory": ""
     },
     {
       "id": 6,
