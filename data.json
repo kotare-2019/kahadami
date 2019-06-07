@@ -1,18 +1,18 @@
 {
   "trees": [
     {
-      "id": 1,
       "name": "Kowhai",
-      "owner": "Hahn",
+      "origin": "Tirau",
+      "owner": "Hanh",
       "image": "/images/kowhaiTree.jpg",
-      "memory": ""
+      "id": "1"
     },
     {
-      "id": 2,
       "name": "Totara",
+      "origin": "",
       "owner": "Mikey",
       "image": "/images/totara.jpg",
-      "memory": ""
+      "id": "2"
     },
     {
       "id": 3,
@@ -33,43 +33,8 @@
       "name": "Kawakawa",
       "owner": "Karla",
       "image": "/images/kawakawa leaf.jpg",
-      "memory": ""
-    },
-    {
-      "id": 6,
-      "name": "Bella",
-      "owner": "Brianna",
-      "image": "/images/puppy6.jpg",
-      "breed": "Labrador"
-    },
-    {
-      "id": 7,
-      "name": "Rocky",
-      "owner": "Ricky",
-      "image": "/images/puppy7.jpg",
-      "breed": "Labrador"
-    },
-    {
-      "name": "wdadwa",
-      "origin": "dawdwa",
-      "owner": "awdwaddwd",
-      "image": "",
-      "id": "8"
-    },
-    {
-      "id": 9,
-      "name": "new",
-      "origin": "dw",
-      "owner": "ewew",
-      "story": "ewe"
-    },
-    {
-      "id": 10,
-      "name": "dwdw",
-      "origin": "wdwdw",
-      "owner": "dwwd",
-      "story": "wdw"
+      "memory": "",
+      "_locals": {}
     }
-  ],
-  "_locals": {}
+  ]
 }

@@ -8,8 +8,6 @@ const viewData = {
     data: data
 }
 
-
-
 treeRoutes.get('/', (req, res) => {
     res.render('./partials/index', data);  
 })
@@ -27,12 +25,9 @@ treeRoutes.get('/edit/:id', (req, res) => {
         return req.params.id == item.id
     })
     res.render('./partials/edit', treeProfile) 
-
 })
 
 treeRoutes.post('/view/:id', (req, res)=>{
-    console.log('here');
-    
     req.body.id = req.params.id
     for (var i = 0; i< data.trees.length; i++){
         if(data.trees[i].id == req.params.id){
@@ -50,7 +45,6 @@ treeRoutes.get('/add', (req, res) => {
     })
     res.render('./partials/add') 
 })
-
 
 treeRoutes.post('/add', (req, res) => {
     const newTree = {
