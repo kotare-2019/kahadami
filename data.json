@@ -1,25 +1,27 @@
 {
   "trees": [
     {
-      "id": 1,
       "name": "Kowhai",
-      "owner": "Hahn",
+      "origin": "Tirau",
+      "owner": "hello i am hanh",
       "image": "/images/kowhaiTree.jpg",
-      "memory": ""
+      "id": "1"
     },
     {
-      "id": 2,
       "name": "Totara",
+      "origin": "",
       "owner": "Mikey",
       "image": "/images/totara.jpg",
-      "memory": ""
+      "id": "2",
+      "_locals": {}
     },
     {
       "id": 3,
       "name": "Pohutukawa",
       "owner": "Dan",
       "image": "/images/Pohutukawa.jpg",
-      "memory": ""
+      "memory": "",
+      "_locals": {}
     },
     {
       "id": 4,
@@ -34,6 +36,13 @@
       "owner": "Karla",
       "image": "/images/kawakawa leaf.jpg",
       "memory": ""
+    },
+    {
+      "id": 6,
+      "name": "New Tree",
+      "origin": "OLLIE",
+      "owner": "Karla Hogan",
+      "story": "wdwd"
     }
   ],
   "_locals": {}
