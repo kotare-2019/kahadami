@@ -66,3 +66,13 @@ body {
 .move{
   height: 50px;
 }
+
+.edit{
+ color: white;
+ text-decoration: none;
+}
+
+.edit:hover{
+  color: white;
+  text-decoration: none;
+ }

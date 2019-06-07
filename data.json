@@ -2,15 +2,21 @@
   "trees": [
     {
       "name": "Kowhai",
-      "origin": "Tirau",
-      "owner": "hello i am hanh",
+      "origin": [
+        "Ollies",
+        "dwdw,dwddw,This is the story,NZ,hello i am hanh,Tirau"
+      ],
+      "owner": "",
       "image": "/images/kowhaiTree.jpg",
       "id": "1"
     },
     {
       "name": "Totara",
-      "origin": "",
-      "owner": "Mikey",
+      "origin": [
+        "Mikey",
+        ""
+      ],
+      "owner": "",
       "image": "/images/totara.jpg",
       "id": "2",
       "_locals": {}
@@ -35,14 +41,8 @@
       "name": "Kawakawa",
       "owner": "Karla",
       "image": "/images/kawakawa leaf.jpg",
-      "memory": ""
-    },
-    {
-      "id": 6,
-      "name": "New Tree",
-      "origin": "OLLIE",
-      "owner": "Karla Hogan",
-      "story": "wdwd"
+      "memory": "",
+      "_locals": {}
     }
   ],
   "_locals": {}

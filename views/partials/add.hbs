@@ -1,26 +1,27 @@
 <form class="form" action="/trees/add" method="post">
-  <img class="img-circle" src="{{image}}" alt="{{name}}">
+
+  <label for="image" class="form-item">
+    Enter Image URL:
+    <input type="text" name="image" value="{{image}}">
+  </label>
   <label for="name" class="form-item">
     Name:
     <input type="text" name="name" value="{{name}}">
   </label>
-  
-  <label for="origin" class="form-item">
-    Origin:
-    <input type="text" name="origin" value="{{origin}}">
-  </label>
-  
   <label for="owner" class="form-item">
-    Owner:
+    Storyteller:
     <input type="text" name="owner" value="{{owner}}">
   </label>
     
-  <label for="story" class="form-item">
-    Story:
-    <input type="text" name="story" value="{{story}}">
+  
+  <label for="origin" class="form-item">
+    Home:
+    <input type="text" name="origin" value="{{origin}}">
   </label>
   
-  <input type="hidden" name="image" value="{{image}}">
-  
+  <label for="story" class="form-item">
+    Memory:
+    <input type="text" name="story" value="{{story}}">
+  </label>
   <input type="submit" name="" value="Submit">
 </form>

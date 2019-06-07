@@ -47,11 +47,14 @@ treeRoutes.get('/add', (req, res) => {
 })
 
 treeRoutes.post('/add', (req, res) => {
+    console.log(req.body.image);
+    
     const newTree = {
         id: data.trees.length + 1,
         name: req.body.name,
         origin: req.body.origin,
         owner: req.body.owner,
+        image: req.body.image,
         story: req.body.story
     }
     data.trees.push(newTree)
