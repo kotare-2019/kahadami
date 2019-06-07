@@ -21,8 +21,6 @@ treeRoutes.get('/view/:id', (req, res) => {
     res.render('./partials/view', treeProfile)
 })
 
-
-
 treeRoutes.get('/edit/:id', (req, res) => {
    
     let treeProfile = data.trees.find(item =>{
@@ -55,7 +53,6 @@ treeRoutes.get('/add', (req, res) => {
 
 
 treeRoutes.post('/add', (req, res) => {
-    // data.trees.push(treeProfile)
     const newTree = {
         id: data.trees.length + 1,
         name: req.body.name,
@@ -63,18 +60,11 @@ treeRoutes.post('/add', (req, res) => {
         owner: req.body.owner,
         story: req.body.story
     }
-    console.log(newTree.id);
-
- 
     data.trees.push(newTree)
-
     fs.writeFile('data.json', JSON.stringify(data, null, 2), 'utf8', (err)=>{ 
         res.redirect('/')
     }) 
-
-    // length + 1
 })
-
 
 module.exports = {
     treeRoutes
