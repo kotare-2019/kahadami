@@ -23,7 +23,7 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "heroku": "^7.25.0",
-    "i": "^0.3.6"
+    "i": "^0.3.7"
   },
   "devDependencies": {
     "jest": "^24.1.0",
